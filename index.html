@@ -9,11 +9,14 @@
     <title>Etch-a-Sketch</title>
 </head>
 <body>
-    <div class="title">Etch-a-Sketch</div>
-    <div class="instructions"></div>
+    <h1 class="title">Etch-a-Sketch</h1>
+    <div class="instructions">Generate a canvas of squares using the form below.
+                                Higher numbers increase the resolution of the canvas. <br>
+                                Moving your cursor over the "pixels" fills them in. 
+                                Press the Reset button or enter a new resolution to reset the canvas.</div>
     <div class="controls">
-        <div class="label"></div>
-        <input id="grid_size" type="number">
+        <div class="label">Enter a number from 1-100: </div>
+        <input class="grid_size" type="number">
         <button class="form_submit">Go</button>
     </div>
     <div class="sketcher"></div>
