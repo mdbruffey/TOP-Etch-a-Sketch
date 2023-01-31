@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sketcher {
+    flex: 1;
+    display: flex;
+    min-width: 750px;
+    min-height: 750px;
+    border: 1px solid black;
+}
+
+.canvas {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.canvas_row {
+    display: flex;
+    flex: 1;
+}
+
+.pixel {
+    flex: 1;
+}
+
+.filled {
+    background: black;
+}
