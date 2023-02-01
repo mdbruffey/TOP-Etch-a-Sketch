@@ -24,6 +24,7 @@ function generateCanvas(grid_size){
             let pixel = document.createElement("div");
             pixel.classList.add("pixel");
             pixel.addEventListener('mouseover', paintElement);
+            pixel.setAttribute("draggable",false);
             row.appendChild(pixel);
         }
         canvas.appendChild(row);
@@ -32,8 +33,13 @@ function generateCanvas(grid_size){
 }
 
 function paintElement(e){
+    if (!mouseDown) {return;}
     this.classList.add("filled");
 }
+
+let mouseDown = false;
+document.body.onmousedown = () => (mouseDown = true);
+document.body.onmouseup = () => (mouseDown = false);
 
 const button = document.querySelector(".form_submit");
 button.addEventListener("click",submitGridSize)
